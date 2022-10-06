@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+:root{
+  --pink:hsl(322,100%,66%);
+  --pcyan:hsl(193, 100%, 96%);
+  --cyan:hsl(192, 100%, 9%);
+  --blue:hsl(208, 11%, 55%);
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  box-sizing: border-box;
+  font-weight: 'Open Sans', sans-serif;
+}
+h1,h2{
+  font-family: 'Poppins', sans-serif;
+  color: var(--cyan);
+}
+p{
+  color: var(--blue);
+}
+footer p{
+  color: var(--pcyan);
+}
+header{
+  background-image: url(./images/mobile.svg);
+  background-color:var(--pcyan);
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 15%;
+}
+nav span img{
+  width: 100px;
+  margin-top: 5px;
+}
+nav button{
+  background: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 1% 5%;
+  color: var(--cyan);
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 5%;
+}
+#hero{
+  width: 80%;
+  margin: 10%;
+  text-align: center;
+}
+#hero h1,#hero p{
+  margin-bottom: 30px;
+}
+ #hero button,#float button{
+  background: var(--pink);
+  border: 1px solid var(--pink);
+  padding: 3% 10%;
+  width: 80%;
+  border-radius: 25px;
+  color: white;
+}
+#mi{
+  width: 80%;
+  margin: 10%;
+}
+.inner span img{
+  width: 100%;
+  margin:auto;
+  margin-bottom: 0;
+}
+.inner{
+  width:90%;
+  margin:10% 5%;
+  display:flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 15px #ddd;
+  border-radius: 20px;
+  max-height: 500px;
+  height: 500px;
+}
+.inner div{
+  text-align: center;
+  width: 80%;
+  margin:10% auto;
+  height: 250px;
+}
+.inner div h2{
+  margin: 20px 0;
+}
+#float{
+  background: white;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  box-shadow: 0 -5px  15px #ddd;
+  padding: 5% 10%;
+  border-radius: 10px;
+  position: absolute;
+  top: 2470px;
+  left: 5%;
+}
+main{
+  margin-bottom: 200px;
+}
+footer{
+  background: var(--cyan);
+  color: white;
+  margin: 0;
+  padding: 30% 0;
+}
+footer span p{
+  display: inline;
+}
+footer span{
+  display: block;
+  margin: 5%;
+}
+ul li:before{
+ display: none;
+}
+footer div p{
+  margin:2% 5%;
+}
+#socials{
+  width: 25%;
+  margin:auto;
+}
+#socials img{
+  margin:5% 2%;
+}
+img[src="./images/logo1.svg"]{
+  width:200px;
+  margin-left: 5%;
+}
+#nav{
+  margin: 20% 0;
+}
+#center{
+  text-align: center;
+}
+#nav p{
+  margin-top: 20px;
+}
+.inner span{
+  display: block;
+  width: 60%;
+  margin: auto;
+}
+
+@media(min-width:700px){
+  header{
+  background-image: url(./images/desktop.svg);
+  background-color: var(--pcyan);
+  padding-bottom: 10%;
+  }
+  #flex{
+    display: grid;
+    margin-right: 10%;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+  }
+  #flex div,#flex img{
+    width: 80%;
+  }
+  #flex div{
+    margin-top: 100px;
+  }
+  .inner{
+    flex-direction: row-reverse;
+    justify-items: space-between;
+    /*padding: 5%;*/
+    height: 300px;
+    margin: 2.5% 5%;
+  }
+  .inner span img,.inner div{
+    margin: 0;
+    text-align: left;
+    margin: 5%;
+  }
+  .inner img{
+    width: 70%;
+  }
+  .inner div{
+    width: 100%;
+  }
+  .inner span{
+    margin-top: 2%;
+    margin-right: 5%;
+  }
+  #reverse{
+    flex-direction: row;
+  }
+  #reverse span{
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  #float{
+    width: 60%;
+    top: 1800px;
+    left:20%;
+  }
+  .contain{
+    display: grid;
+    margin-top: 15%;
+    grid-template-columns: repeat(3,1fr)
+  }
+  #nav{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content:space-between;
+  }
+  #nav div{
+    width: 40%;
+    justify-content: space-between;
+  }
+  #center{
+    text-align:right;
+    margin-top: 20px;
+  }
+  footer{
+    padding: 5%;
+  }
+  #socials{
+    width: 35%;
+  }
+}
+@media(min-width:990px){
+  #float{
+    top:1850px;
+  }
+}
+@media (min-width:1150px){
+  .inner span{
+    margin-top:0 ;
+    height:100%;
+  }
+  .inner span img{
+    width: 80%;
+  }
+  #float{
+    top: 2000px;
+  }
+}
+@media (max-width:320px){
+  #float{
+    top: 2400px;
+  }
+}
+/*Coded by Ebuka*/
